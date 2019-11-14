@@ -45,7 +45,7 @@ int main()
        sortart(a,pro);
        printf("Enter Time Slice OR Quantum Number : ");
        scanf("%d",&ts);
-       printf("\n***************************************\n");
+       printf("\n*************----------------------\n");
        printf("Gantt Chart\n");
        printf("0");
        for(time=0,i=0;remain!=0;)
@@ -80,14 +80,14 @@ int main()
                      i=0;
        }
        printf("\n\n");
-       printf("***************************************\n");
+       printf("---------------------------------------\n");
        printf("Pro\tArTi\tBuTi\tTaTi\tWtTi\n");
        printf("***************************************\n");
        for(i=0;i<pro;i++)
        {
               printf("P%d\t%d\t%d\t%d\t%d\n",a[i].p,a[i].art,a[i].but,a[i].tat,a[i].wtt);
        }
-       printf("***************************************\n");
+       printf("........................................\n");
        avgwt = avgwt/pro;
        avgtt = avgtt/pro;
        printf("Average Waiting Time : %.2f\n",avgwt);
